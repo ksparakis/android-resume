@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Resume</string>
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
+    <string name="about_me">\nHey,\n\nMy name is Konstantino Sparakis. I hold an M.S. in Computer Engineering as of May 2017 from Boston university. I\'m a cryptography and computer security nerd, photographer, musician, and Dj amongst other things. I\'m always trying to push my comfort zone and taking up interesting hobbies!
+        \n\nI\'m also an entrepreneur at heart. I own and operate a small consulting firm Cipher Zero Inc, but currently looking for a full-time position at a large corporation in the tech world to see how the big guys rock out. But if you have an interesting side project and you need help developing it feel free to reach out!
+        \n\nThis is my Android resume and is meant as a demo to showcase my knowledge of mobile development. Feel free to contact me via any of the links below or leave a comment in the comment tab in this app!</string>
+</resources>
