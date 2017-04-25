@@ -17,7 +17,8 @@ import cz.msebera.android.httpclient.entity.StringEntity;
  */
 public class apiHandler {
 
-    private static final String BASE_URL = "https://resume_api.sparakis.com/";
+    //private static final String BASE_URL = "http://resume-api.sparakis.com/";
+    private static final String BASE_URL = "http://104.196.216.20/";
     private static AsyncHttpClient client = new AsyncHttpClient();
 
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {

@@ -34,17 +34,23 @@ public class ApiCallFunctions {
      */
 
     public static void post_comments(String name, String company, String comment, Context context, JsonHttpResponseHandler responseHandler) {
+        RequestParams commentData;
+        if (company.isEmpty())
+        {
+             commentData= new RequestParams();
+                commentData.put("Name", name);
+                commentData.put("Comment", comment);
 
-        JSONObject commentData = new JSONObject();
-        try {
-            commentData.put("name", name);
-            commentData.put("company", company);
-            commentData.put("comment", comment);
-
-        } catch (JSONException e) {
-            e.printStackTrace();
         }
-        apiHandler.postRaw(context, "comments/", commentData, responseHandler);
+        else
+        {
+            commentData= new RequestParams();
+            commentData.put("Name", name);
+            commentData.put("Comment", comment);
+            commentData.put("Company", company);
+        }
+
+        apiHandler.post( "comments/", commentData, responseHandler);
     }
 
 }

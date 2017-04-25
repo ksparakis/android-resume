@@ -3,17 +3,32 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ededed"
     android:layout_gravity="start">
     <Button
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/cardview_shadow_end_color"/>
+        android:text="Leave A Comment"
+        android:id="@+id/commentBtn"
+        android:textColor="#ffffff"
+        android:background="#22313F"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/pulltv"
+        android:layout_height="wrap_content"
+        android:text="Pull Down to Load Comments"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/paymentRecyclerView"
+        android:id="@+id/comments_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ededed"/>
-
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>
